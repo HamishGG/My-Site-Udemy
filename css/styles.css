@@ -1,0 +1,114 @@
+
+body {
+  margin: 0;
+  text-align: center;
+}
+
+.top-container {
+  background-color: #00adb5;
+  display: inline-block;
+  width: 1120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.myName {
+  color: #eeeeee;
+  display: inline-block;
+  overflow: hidden;
+  visibility: hidden;
+  white-space: nowrap;
+  padding-top: 40px;
+  margin-bottom: -40px;
+  animation-name: showText;
+  animation-duration: 2.1s;
+  animation-delay: 4.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showText {
+  from {
+    width: 0;
+  }
+  to {
+    width: 175px;
+    visibility: visible;
+  }
+}
+
+.myJob {
+  animation-name: fadeIn;
+  animation-duration: 7s;
+    padding-top: 30px;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+  animation-delay: 4.7s;
+}
+
+@keyframes fadeIn {
+  0% {
+    visibility: visible;
+    opacity:0;
+  }
+  100% {
+    visibility: visible;
+    opacity:1;
+  }
+}
+
+.mountain {
+  margin-top: -40px;;
+}
+
+.bottom-cloud {
+  position: absolute;
+  top: 175px;
+  right: 0;
+  animation-fill-mode: forwards;
+  animation-name: bottom-cloud;
+  animation-duration: 10s;
+}
+
+.top-cloud {
+  position: absolute;
+  top: 45px;
+  left: 95px;
+  animation-fill-mode: forwards;
+  animation-name: top-cloud;
+  animation-duration: 10s;
+}
+
+.sun {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+@keyframes top-cloud {
+  0% {}
+  100% {padding-left:600px;}
+
+}
+
+@keyframes bottom-cloud {
+  0% {}
+  100% {padding-right: 650px;}
+
+}
+
+.middle-container {
+  height: 200px;
+  width: 200px;
+  background-color: #00adb5;
+
+}
+
+.bottom-container {
+  height: 200px;
+  width: 200px;
+  background-color: #eeeeee;
+
+}
