@@ -7,42 +7,143 @@ body {
 
 h1 {
   font-family: 'Caveat', cursive;
+  font-size: 5.6rem;
 }
 
-h2, h3 {
+h2 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
 }
 
-.myName {
-    font-size: 90px;
-    padding-top: 120px;
-    margin: 0;
-    margin-bottom: -20px;
-    font-family: 'Caveat', cursive;
-}
-
-.myJob {
+h3 {
   font-family: 'Montserrat', sans-serif;
-  text-decoration: underline;
-  font-weight: bold;
-  font-size: 20px;
+  font-size: 2.5rem;
+  color: #11999E;
 }
+@media only screen and (max-device-width: 800px) {
+	h3 { font-size: 1em;}
+}
+
+.skillTitle {
+  h3;
+
+}
+@media only screen and (max-device-width: 800px) {
+	.skillTitle { font-size: 2em; padding-top: 20px;}
+}
+
+@media only screen and (max-device-width: 799px) {
+	.skillTitleMainSkill { font-size: 2em;padding-bottom: 25px;}
+  .skillTitleLearning {font-size: 1.5em;padding-top: 25px; }
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #11999E;
+}
+
+a {
+  color: #11999E;
+}
+
+.skilldesc {
+    clear: left;
+}
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  line-height: 2;
+}
+
 
 .top-container {
   background-color: #00adb5;
   position: relative;
-  margin: 0;
+  padding-top: 100px;
 }
 
 .middle-container {
 }
 
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+
+}
+
+.Project-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+
+}
+
 .bottom-container {
 }
+
+
+.myButton {
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:12px;
+	border:2px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:24px;
+	font-weight:bold;
+	padding:8px 29px;
+  margin: 5px 0 25px 0;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.footer-link {
+	box-shadow: 0px -2px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:13px;
+	border:2px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:4px 16px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+.footer-link:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+.footer-link:active {
+	position:relative;
+	top:1px;
+}
+
+
+
 
 .mountain {
   position: relative;
   text-align: center;
+  bottom: -4px;
 }
 
 .sun {
@@ -55,7 +156,7 @@ h2, h3 {
 
 .bottom-cloud {
   position: absolute;
-  top: 300px;
+  top: 400px;
   right: 500px;
   animation-fill-mode: forwards;
   animation-name: bottom-cloud;
@@ -93,11 +194,21 @@ h2, h3 {
 
 
 .Me {
+  padding-top: 15px;
   border-radius: 50%;
   width: 150px;
 }
 
-.Images {
+.data-Images, .training-Images {
   width: 100px;
   height: 100px;
+  float: left;
+  margin: 10px 30px 10px 0;
+}
+
+.Images-projects {
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin: 10px 0px 10px 30px;
 }
