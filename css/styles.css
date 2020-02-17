@@ -1,82 +1,48 @@
 
 body {
-  margin: 0;
   text-align: center;
+  font-family: 'Merriweather', serif;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Caveat', cursive;
+}
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.myName {
+    font-size: 90px;
+    padding-top: 120px;
+    margin: 0;
+    margin-bottom: -20px;
+    font-family: 'Caveat', cursive;
+}
+
+.myJob {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .top-container {
   background-color: #00adb5;
-  display: inline-block;
-  width: 1120px;
   position: relative;
-  overflow: hidden;
+  margin: 0;
 }
 
-.myName {
-  color: #eeeeee;
-  display: inline-block;
-  overflow: hidden;
-  visibility: hidden;
-  white-space: nowrap;
-  padding-top: 40px;
-  margin-bottom: -40px;
-  animation-name: showText;
-  animation-duration: 2.1s;
-  animation-delay: 4.2s;
-  animation-fill-mode: forwards;
+.middle-container {
 }
 
-@keyframes showText {
-  from {
-    width: 0;
-  }
-  to {
-    width: 175px;
-    visibility: visible;
-  }
-}
-
-.myJob {
-  animation-name: fadeIn;
-  animation-duration: 7s;
-    padding-top: 30px;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  visibility: hidden;
-  animation-delay: 4.7s;
-}
-
-@keyframes fadeIn {
-  0% {
-    visibility: visible;
-    opacity:0;
-  }
-  100% {
-    visibility: visible;
-    opacity:1;
-  }
+.bottom-container {
 }
 
 .mountain {
-  margin-top: -40px;;
-}
-
-.bottom-cloud {
-  position: absolute;
-  top: 175px;
-  right: 0;
-  animation-fill-mode: forwards;
-  animation-name: bottom-cloud;
-  animation-duration: 10s;
-}
-
-.top-cloud {
-  position: absolute;
-  top: 45px;
-  left: 95px;
-  animation-fill-mode: forwards;
-  animation-name: top-cloud;
-  animation-duration: 10s;
+  position: relative;
+  text-align: center;
 }
 
 .sun {
@@ -87,28 +53,51 @@ body {
   top: 20px;
 }
 
-@keyframes top-cloud {
-  0% {}
-  100% {padding-left:600px;}
-
+.bottom-cloud {
+  position: absolute;
+  top: 300px;
+  right: 500px;
+  animation-fill-mode: forwards;
+  animation-name: bottom-cloud;
+  animation-duration: 10s;
 }
 
-@keyframes bottom-cloud {
+/* @keyframes bottom-cloud {
   0% {}
   100% {padding-right: 650px;}
 
+} */
+
+.top-cloud {
+  position: absolute;
+  top: 45px;
+  left: 500px;
+  animation-fill-mode: forwards;
+  animation-name: top-cloud;
+  animation-duration: 10s;
 }
 
-.middle-container {
-  height: 200px;
-  width: 200px;
-  background-color: #00adb5;
+/* @keyframes top-cloud {
+  0% {}
+  100% {padding-left:600px;}
 
+} */
+
+.sun {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
-.bottom-container {
-  height: 200px;
-  width: 200px;
-  background-color: #eeeeee;
 
+.Me {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.Images {
+  width: 100px;
+  height: 100px;
 }
